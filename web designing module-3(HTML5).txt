@@ -1,0 +1,24 @@
+1) What are the new tags added in HTML5?
+:> (MOVED) article, (MOVED) aside, audio, canvas,command, datalist, details, embed, figcaption, figure,footer, header, hgroup,
+    keygen, mark, math, meter, nav, output, progress, rp, rt, ruby, section,source, summary, svg, time, track,video, wbr.
+
+2) How to embed audio and video in a webpage?
+:> The HTML5 <audio> and <video> tags make it simple to add media to a website. You need to set src attribute to identify the media 
+    source and include a controls attribute so the user can play and pause the media. The current HTML5 draft specification does not specify which
+    video formats browsers should support in the video tag. But most commonly used video formats are − Ogg − Ogg files with Thedora video codec 
+    and Vorbis audio codec. mpeg4 − MPEG4 files with H.264 video codec and AAC audio codec. You can use <source> tag to specify media along with
+    media type and many other attributes. 
+    he current HTML5 draft specification does not specify which audio formats browsers should support in the audio tag. But most commonly used audio
+    formats are ogg, mp3 and wav. You can use <source&ggt; tag to specify media along with media type and many other attributes. 
+
+3) Semantic element in HTML5?
+:> A semantic element clearly describes its meaning to both the browser and the developer. Examples of non-semantic 
+    elements: <div> and <span> - Tells nothing about its content. Examples of semantic elements: <form>, <table>, and <article> - 
+    Clearly defines its content. In HTML there are some semantic elements that can be used to define different parts of a web page:
+   <article>, <aside>, <details>, <figcaption>, <figure>, <footer>, <header>, <main>, <mark>, <nav>, <section>, <summary>, <time>.
+
+4) Canvas and SVG tags
+:> SVG is abbreviated as Scalable Vector Graphics. It is a vector-based graphics and used the XML based format for graphics providing the support for interaction. 
+    SVG images are way better than bitmap images.  In SVG images, the vector image is composed of a fixed set of shapes, and while scaling these images, 
+    it preserves the shape of the image. Canvas is an HTML element, which is used to draw graphics on the web page. It is referred to as a bitmap with an immediate
+    mode graphics application programming interface for drawing on it. The element canvas is used as a container for graphics. In Canvas, we need the script to draw the graphics.
