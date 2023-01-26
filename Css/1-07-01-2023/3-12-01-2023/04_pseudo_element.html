@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            height: auto;
+            width: 200px;
+            border: 2px solid black;
+            padding: 20px;
+            margin: auto;
+        }
+
+        .div1::after {
+            content: "-";
+        }
+
+        .div1::first-letter {
+            font-size: 40px
+        }
+
+        .div1::first-line {
+            color: blue;
+        }
+
+        li::marker {
+            color: blue;
+        }
+
+        .div1::selection {
+            background-color: rgb(255, 238, 0);
+            color: rgba(70, 43, 207, 0.855);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore dicta fuga similique quis! Corrupti nam maxime
+        ab nobis reprehenderit quis dignissimos eveniet voluptas. Eum vero cum ipsam iste minima sed?
+    </div>
+    <ul>
+        <li>list 1</li>
+        <li>list 2</li>
+    </ul>
+</body>
+
+</html>
