@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            border: 2px solid black;
+            height: auto;
+            width: 200px;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .div2 {
+            border: 2px solid black;
+            height: auto;
+            width: 200px;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .div1 p {
+            color: red;
+        }
+
+        .div1 p span {
+            color: blue;
+        }
+
+        .div2 p span {
+            color: blueviolet;
+        }
+
+        .div2>.div3 {
+            border: inherit;
+            height: inherit;
+            width: inherit;
+            padding: inherit;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quo rem temporibus eos corrupti ratione
+            iusto a, perspiciatis voluptate laborum ipsa mollitia labore sequi ipsum laudantium sunt recusandae, quos
+            nisi?
+            <span>hello world</span>
+        </p>
+    </div>
+    <div class="div2">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, mollitia ipsum placeat reiciendis
+            explicabo totam temporibus, laboriosam odit repellat alias perspiciatis, sint quis quo distinctio doloribus
+            voluptates fugiat et illum.
+            <span>hello world</span>
+        </p>
+        <div class="div3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum mollitia sint voluptate blanditiis
+                voluptatem
+                distinctio provident facilis illum eos, voluptatibus praesentium consequatur cupiditate reiciendis, fuga
+                dolore sunt assumenda sequi est?</p>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
