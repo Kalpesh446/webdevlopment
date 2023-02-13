@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../fontawsome/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+            color: red;
+            font-weight: 700;
+        }
+        ul{
+            list-style: none;
+
+        }
+        .main-list{
+            background-color: lightcoral;
+        }
+        .main-list li{
+            display: inline-block;
+            padding: 20px;
+            background-color: lightgreen;
+        }
+        .disp-menu{
+            position: relative;
+        }
+    .main-list .show-menu{
+            display: none;
+            position: absolute;
+            top: 44px;
+            left: 6px;
+            width: 180px;
+        
+        }
+        .main-list .show-menu li{
+            background-color: yellow;
+            padding: 10px 25px;
+        }
+        .disp-menu:hover .show-menu {
+            display: block;
+            top: 44px;
+            left: 6px;
+            width: 120px;
+        }
+        .disp-menu .link1 span{
+            transition: 1s ease all;
+        }
+        .disp-menu:hover span{
+            transform: rotateX(180deg);
+}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul class="main-list">
+            <li><a href="">home</a></li>
+            <li class="disp-menu"><a href="" class="link1">services <span class="fa-solid fa-angle-down"></span> </a>
+            <ul class="show-menu">
+                <li> <a href="">sevice 1</a></li>
+                <hr color="blue">
+                <li> <a href="">sevice 2</a></li>
+            </ul>
+            </li>
+            <li><a href="">product</a></li>
+
+        </ul>
+    </div>
+</body>
+</html>
