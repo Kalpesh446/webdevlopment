@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <!-- jquery cdn -->
+       <script src="../jquery.js"></script>
+       <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $(".div1").fadeIn(2000);
+            })
+            $("#btn2").click(function(){
+                $(".div1").fadeOut(2000);
+            })
+            $("#btn3").click(function(){
+                $(".div2").fadeToggle(1000);
+            })
+            $("#btn4").click(function(){
+                $(".div3").fadeTo(1000,0.54);
+            })
+        })
+       </script>
+              <style>
+                .div1{
+                    display: none;
+                    height: 200px;
+                    width: 250px;
+                    background-color: aqua;
+                }
+                .div2{
+                    height: 200px;
+                    width: 250px;
+                    background-color: lightcoral;
+                }
+                .div3{
+                    height: 200px;
+                    width: 250px;
+                    background-color:lawngreen;
+                }
+               </style>
+</head>
+<body>
+    <!-- fade function  are:
+    fadein() = display content
+    fadeout() = hide content
+    fadetoggle() = display and hide both
+    fadeto() = set opacity of content
+    -->
+    <button id="btn1">fadein</button>
+    <button id="btn2">fadeout</button>
+    <button id="btn3">fadetoggle</button>
+    <button id="btn4">fadeto</button>
+
+    <hr>
+    <div class="div1"></div> <br>
+    <div class="div2"></div> <br>
+    <div class="div3"></div>
+</body>
+</html>
