@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+    </script>
+    <style>
+        .div1{
+            height: 350px;
+            width: 400px;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $txt ="",
+            $txt ="height :" + $(".div1").height() + "<br>" +
+            "width :" +$(".div1").width() + "<br>" +
+            "innerheight :" + $(".div1").innerHeight() + "<br>" +
+            "innerwidth :" +$(".div1").innerWidth() + "<br>" +
+            "outerheight :"+$(".div1").outerHeight() + "<br>"+
+            "outerwidth :" +$(".div1").outerWidth()+ "<br>" +
+            "outerheight(true):" +$(".div1").outerHeight(true)+ "<br>" +
+            "outerwidth(true):" +$(".div1").outerWidth(true)+ "<br>" 
+            $(".div1").html($txt);
+        })
+    </script>
+</head>
+<body>
+    <div class="div1"></div>
+</body>
+</html>
