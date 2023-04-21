@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--  there is two type of increment 
+        1). pre-increment 2). post-increment
+     -->
+
+    <script>
+      let num = 20;
+      //   first print and than increment (post-increment)
+      document.writeln(num++); //= 20
+      document.writeln(num++); //= 21
+      document.writeln(num++); //= 22
+      document.writeln(num);
+      //   first increment and than print (pre-increment)
+      document.writeln(++num);
+      document.writeln(num);
+    </script>
+
+    <br />
+    <!-- there is two type of decrement
+        1). pre-decrement 2). post-decremnet
+     -->
+
+    <script>
+      let num1 = 30;
+      document.writeln(num1--); // 30-1 = 29
+      document.writeln(num1--); // 29-1= 28
+      num1--; // = 27
+      document.writeln(num1); //=27
+
+      document.writeln(--num1); //27-1 =26
+      document.writeln(--num1); //26-1 =25
+    </script>
+  </body>
+</html>
