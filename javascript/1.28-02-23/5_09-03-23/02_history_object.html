@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function go_fn() {
+        history.go(-3);
+      }
+      function back_fn() {
+        history.back();
+      }
+    </script>
+  </head>
+  <body>
+    <!--history go(), back(), forward() -->
+
+    <button onclick="return go_fn()">go</button>
+    <button onclick="return back_fn()">back</button>
+    <button onclick="">forward</button>
+  </body>
+</html>

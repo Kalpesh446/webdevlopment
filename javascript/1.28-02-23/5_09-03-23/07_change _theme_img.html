@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        height: 100px;
+        width: 100px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .dark-theme {
+        background-color: rgba(27, 24, 24, 0.274);
+        color: white;
+      }
+      .dark-theme a {
+        color: blue;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./moon-removebg-preview.png" alt="" id="icon" />
+    <h1>hello world</h1>
+    <a href="#">go to the next page</a>
+    <script>
+      let icon = document.querySelector("#icon");
+
+      icon.addEventListener("click", function () {
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme") == true) {
+          icon.src = "./sun-removebg-preview.png";
+        } else {
+          icon.src = "./moon-removebg-preview.png";
+        }
+      });
+    </script>
+  </body>
+</html>
