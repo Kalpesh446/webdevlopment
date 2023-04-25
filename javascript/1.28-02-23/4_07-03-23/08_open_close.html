@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let links =
+        "file:///C:/fronted%20devlopment/javascript/4_07-03-23/05_alert.html";
+      var link;
+      function open_fn() {
+        link = window.open(links);
+      }
+      function close_fn() {
+        link.close();
+      }
+      function forward_fn() {
+        history.forward();
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="return open_fn()">click here to open alert</button>
+    <button onclick="return close_fn()">close</button>
+    <button onclick="return forward_fn()">forward</button>
+  </body>
+</html>
