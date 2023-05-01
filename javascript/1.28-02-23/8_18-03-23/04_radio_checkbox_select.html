@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        color: red;
+      }
+    </style>
+    <script>
+      function check_gen() {
+        let male = document.getElementById("male").checked;
+        let female = document.getElementById("female").checked;
+        if (male == false && female == false) {
+          document.getElementById("msg1").innerHTML = "select gender";
+          return false;
+        }
+        let c1 = document.getElementById("c1").checked;
+        let c2 = document.getElementById("c2").checked;
+        let c3 = document.getElementById("c3").checked;
+        if (c1 == false && c2 == false && c3 == false) {
+          document.getElementById("msg2").innerText = "select hobbies";
+          return false;
+        }
+
+        let city = document.getElementById("city").value;
+        if (city == -1) {
+          document.getElementById("msg3").innerText="select city";
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form action="#" name="fom1">
+      <ylabel for="">select gender</label>
+      <input type="radio" id="male" name="gen" />male
+      <input type="radio" id="female" name="gen" /> female
+      <span id="msg1"></span>
+
+      <br />
+      <br />
+      <label for="">hobbies</label>
+      <input type="checkbox" id="c1" name="" />reading
+      <input type="checkbox" id="c2" name="" />dancing
+      <input type="checkbox" id="c3" name="" />movies
+      <span id="msg2"></span>
+      <br />
+      <br />
+
+      <label for="">cities</label>
+      <select name="city" id="city">
+        <option value="-1">---select---</option>
+        <option value="">surat</option>
+        <option value="">baroda</option>
+        <option value="">navsari</option>
+      </select>
+      <span id="msg3"></span>
+      <br />
+      <br />
+      <button type="submit" onclick="return check_gen()">
+        check validation
+      </button>
+    </form>
+  </body>
+</html>
