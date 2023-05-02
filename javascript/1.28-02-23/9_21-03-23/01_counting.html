@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="counter"></div>
+
+    <script>
+      let count = setInterval(counter_num);
+      start_num = 200;
+      function counter_num() {
+        let num = document.querySelector(".counter");
+        num.innerHTML = ++start_num;
+        if (start_num == 800) {
+          clearInterval(count);
+        }
+      }
+    </script>
+  </body>
+</html>

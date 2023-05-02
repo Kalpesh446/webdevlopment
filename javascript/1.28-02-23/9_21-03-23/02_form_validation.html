@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="02_style.css" />
+    <script src="02_full_form.js"></script>
+    <script src="02_reg_ex.js"></script>
+  </head>
+  <body>
+    <div class="regpage">
+      <h1>Register Here...</h1>
+      <form action="#" name="form1" method="get">
+        <!---------------first name------------>
+        <div class="row">
+          <div class="col-1">
+            <label for="">First name</label>
+          </div>
+          <div class="col-2">
+            <input type="text" id="fname" name="" onkeyup="fname_reg_ex()" />
+            <span id="msg"></span>
+          </div>
+        </div>
+
+        <!--------------Last name-------------->
+        <div class="row">
+          <div class="col-1">
+            <label for="">Last name</label>
+          </div>
+          <div class="col-2">
+            <input type="text" id="lname" name="" onkeyup="lname_reg_ex()" />
+            <span id="msg1"></span>
+          </div>
+        </div>
+        <!------------gender ----------------->
+        <div class="row">
+          <div class="col-1">
+            <label for="">Gender</label>
+          </div>
+          <div class="col-2">
+            <input type="radio" id="male" name="gen" />
+            <label for="">Male</label>
+            <input type="radio" id="female" name="gen" />
+            <label for="">female</label>
+
+            <span id="msg2"></span>
+          </div>
+        </div>
+        <!----------- date ----------->
+        <div class="row">
+          <div class="col-1">
+            <label for="">Date of birth</label>
+          </div>
+          <div class="col-2">
+            <input type="date" id="dob" name="" />
+            <span id="msg3"></span>
+          </div>
+        </div>
+        <!--------- address ------ ----->
+        <div class="row">
+          <div class="col-1">
+            <label for="">Address</label>
+          </div>
+          <div class="col-2">
+            <textarea
+              name=""
+              id="address"
+              cols="39"
+              rows="4"
+              placeholder="Address must be 15 to 50 character"
+              maxlength="100"
+              onblur="return address_reg_ex()"
+            ></textarea>
+            <br />
+            <span id="msg4"></span>
+          </div>
+        </div>
+        <!-------- city --------->
+        <div class="row">
+          <div class="col-1">
+            <label for="">City</label>
+          </div>
+          <div class="col-2">
+            <select name="" id="city">
+              <option value="-1">---select---</option>
+              <option value="">surat</option>
+              <option value="">baroda</option>
+              <option value="">rajkot</option>
+            </select>
+            <span id="msg5"></span>
+          </div>
+        </div>
+        <!-- button -->
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-2">
+            <button type="submit" onclick="return all_blank()">
+              Register Here
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
