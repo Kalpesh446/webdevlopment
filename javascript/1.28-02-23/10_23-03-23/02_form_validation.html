@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="02_style.css" />
+    <script src="02_full_form.js"></script>
+    <script src="02_reg_ex.js"></script>
+  </head>
+  <body>
+    <div class="regpage">
+      <h1>Register Here...</h1>
+      <form action="#" name="form1" method="get">
+        <!---------------first name------------>
+        <div class="row">
+          <div class="col-1">
+            <label for="">First name</label>
+          </div>
+          <div class="col-2">
+            <input type="text" id="fname" name="" onkeyup="fname_reg_ex()" />
+          </div>
+          <div class="col-2">
+            <span id="msg"></span>
+          </div>
+        </div>
+        <!--------------Last name-------------->
+        <div class="row">
+          <div class="col-1">
+            <label for="">Last name</label>
+          </div>
+          <div class="col-2">
+            <input type="text" id="lname" name="" onkeyup="lname_reg_ex()" />
+          </div>
+          <div class="col-2">
+            <span id="msg1"></span>
+          </div>
+        </div>
+        <!------------gender ----------------->
+        <div class="row">
+          <div class="col-1">
+            <label for="">Gender</label>
+          </div>
+          <div class="col-2">
+            <input type="radio" id="male" name="gen" />
+            <label for="">Male</label>
+            <input type="radio" id="female" name="gen" />
+            <label for="">female</label>
+          </div>
+          <div class="col-2">
+            <span id="msg2"></span>
+          </div>
+        </div>
+        <!----------- date ----------->
+        <div class="row">
+          <div class="col-1">
+            <label for="">Date of birth</label>
+          </div>
+          <div class="col-2">
+            <input type="date" id="dob" name="" />
+          </div>
+          <div class="col-2">
+            <span id="msg3"></span>
+          </div>
+        </div>
+        <!--------- address ------ ----->
+        <div class="row">
+          <div class="col-1">
+            <label for="">Address</label>
+          </div>
+          <div class="col-2">
+            <textarea
+              name=""
+              id="address"
+              cols="39"
+              rows="4"
+              placeholder="Address must be 15 to 50 character"
+              maxlength="100"
+              onblur="return address_reg_ex()"
+            ></textarea>
+            <br />
+          </div>
+          <div class="col-2">
+            <span id="msg4"></span>
+          </div>
+        </div>
+        <!-------- city --------->
+        <div class="row">
+          <div class="col-1">
+            <label for="">City</label>
+          </div>
+          <div class="col-2">
+            <select name="" id="city">
+              <option value="-1">---select---</option>
+              <option value="">surat</option>
+              <option value="">baroda</option>
+              <option value="">rajkot</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <span id="msg5"></span>
+          </div>
+        </div>
+        <!------- Email --------->
+        <div class="row">
+          <div class="col-1">
+            <label for="">Enter Email</label>
+          </div>
+          <div class="col-2">
+            <input
+              type="text"
+              id="mail"
+              name=""
+              onkeyup="return email_reg_ex()"
+            />
+          </div>
+          <div class="col-2">
+            <span id="msg6"></span>
+          </div>
+        </div>
+        <!------- password --------->
+        <div class="row">
+          <div class="col-1">
+            <label for=""> Password</label>
+          </div>
+          <div class="col-2">
+            <input type="password" id="pass" name="" onkeyup="pass_reg_ex()" />
+          </div>
+          <div class="col-2">
+            <span id="msg7"></span>
+          </div>
+        </div>
+        <!-------confirm password --------->
+        <div class="row">
+          <div class="col-1">
+            <label for="">Confirm Password</label>
+          </div>
+          <div class="col-2">
+            <input
+              type="password"
+              id="cpass"
+              name=""
+              onkeyup="cpass_match_pass()"
+            />
+          </div>
+          <div class="col-2">
+            <span id="msg8"></span>
+          </div>
+        </div>
+        <!-------Show password --------->
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-2">
+            <input type="checkbox" name="" id="" onclick="show_hide_pass()" />
+            <label for="">Show Password</label>
+          </div>
+          <div class="col-2"></div>
+        </div>
+
+        <!------- mobile number ------>
+        <div class="row">
+          <div class="col-1">
+            <label for="">Enter mobile number</label>
+          </div>
+          <div class="col-2">
+            <input
+              type="text"
+              id="mob"
+              name=""
+              onkeyup="return mob_reg_ex()"
+              maxlength="10"
+              onblur="mob_length()"
+            />
+          </div>
+          <div class="col-2">
+            <span id="msg9"></span> <br />
+            <span id="msg10"></span>
+          </div>
+        </div>
+
+        <!-- button -->
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-2">
+            <button type="submit" onclick="return all_blank()">
+              Register Here
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
