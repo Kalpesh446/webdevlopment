@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Restaurant Booking Form</title>
+  </head>
+  <body>
+    <h1>Restaurant Booking Form</h1>
+
+    <form id="bookingForm">
+      <label for="bookingChoice">Choice of Booking:</label>
+      <select id="bookingChoice" onchange="updateFormFields()">
+        <option value="fullDay">Full Day Booking</option>
+        <option value="halfDay">Half Day Booking</option>
+        <option value="hourly">Hourly Booking</option></select
+      ><br /><br />
+
+      <label for="userName">User Name:</label>
+      <input type="text" id="userName" /><br /><br />
+
+      <label for="mobileNumber">Mobile Number:</label>
+      <input type="text" id="mobileNumber" /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" /><br /><br />
+
+      <label for="noOfPersons">Number of Persons:</label>
+      <input type="number" id="noOfPersons" /><br /><br />
+
+      <div id="dateSection">
+        <label for="date">Date:</label>
+        <input type="date" id="date" /><br /><br />
+      </div>
+
+      <div id="timeSection">
+        <label for="time">Time:</label>
+        <input type="time" id="time" /><br /><br />
+      </div>
+
+      <div id="slotSection">
+        <label for="slot">Slot:</label>
+        <select id="slot">
+          <option value="breakfast">Breakfast</option>
+          <option value="lunch">Lunch</option>
+          <option value="dinner">Dinner</option></select
+        ><br /><br />
+      </div>
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script>
+      function updateFormFields() {
+        var bookingChoice = document.getElementById("bookingChoice").value;
+        var dateSection = document.getElementById("dateSection");
+        var timeSection = document.getElementById("timeSection");
+        var slotSection = document.getElementById("slotSection");
+
+        dateSection.style.display = "none";
+        timeSection.style.display = "none";
+        slotSection.style.display = "none";
+
+        if (bookingChoice === "fullDay") {
+          dateSection.style.display = "block";
+        } else if (bookingChoice === "halfDay") {
+          dateSection.style.display = "block";
+          slotSection.style.display = "block";
+        } else if (bookingChoice === "hourly") {
+          dateSection.style.display = "block";
+          timeSection.style.display = "block";
+        }
+      }
+
+      // Prevent form submission for demonstration purposes
+      document
+        .getElementById("bookingForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+        });
+    </script>
+  </body>
+</html>
